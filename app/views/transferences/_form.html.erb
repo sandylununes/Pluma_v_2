@@ -1,0 +1,97 @@
+<%= form_with(model: transference, local: true) do |form| %>
+  <% if transference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transference.errors.count, "error") %> prohibited this transference from being saved:</h2>
+
+      <ul>
+      <% transference.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :new_cost_center %>
+    <%= form.text_field :new_cost_center %>
+  </div>
+
+  <div class="field">
+    <%= form.label :old_cost_center %>
+    <%= form.text_field :old_cost_center %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_center_id %>
+    <%= form.text_field :cost_center_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :who_ask %>
+    <%= form.number_field :who_ask %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collaborator %>
+    <%= form.text_field :collaborator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_branch %>
+    <%= form.text_field :new_branch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :old_branch %>
+    <%= form.text_field :old_branch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :branch_id %>
+    <%= form.text_field :branch_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_company %>
+    <%= form.text_field :new_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :old_company %>
+    <%= form.text_field :old_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tranference_date %>
+    <%= form.date_select :tranference_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :old_city %>
+    <%= form.text_field :old_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_city %>
+    <%= form.text_field :new_city %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

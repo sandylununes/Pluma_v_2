@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Transferences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>New cost center</th>
+      <th>Old cost center</th>
+      <th>Cost center</th>
+      <th>Status</th>
+      <th>Who ask</th>
+      <th>User</th>
+      <th>Collaborator</th>
+      <th>New branch</th>
+      <th>Old branch</th>
+      <th>Branch</th>
+      <th>New company</th>
+      <th>Old company</th>
+      <th>Company</th>
+      <th>Tranference date</th>
+      <th>Old city</th>
+      <th>New city</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @transferences.each do |transference| %>
+      <tr>
+        <td><%= transference.new_cost_center %></td>
+        <td><%= transference.old_cost_center %></td>
+        <td><%= transference.cost_center %></td>
+        <td><%= transference.status %></td>
+        <td><%= transference.who_ask %></td>
+        <td><%= transference.user %></td>
+        <td><%= transference.collaborator %></td>
+        <td><%= transference.new_branch %></td>
+        <td><%= transference.old_branch %></td>
+        <td><%= transference.branch %></td>
+        <td><%= transference.new_company %></td>
+        <td><%= transference.old_company %></td>
+        <td><%= transference.company %></td>
+        <td><%= transference.tranference_date %></td>
+        <td><%= transference.old_city %></td>
+        <td><%= transference.new_city %></td>
+        <td><%= link_to 'Show', transference %></td>
+        <td><%= link_to 'Edit', edit_transference_path(transference) %></td>
+        <td><%= link_to 'Destroy', transference, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Transference', new_transference_path %>

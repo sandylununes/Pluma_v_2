@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @change_salary.company %>
+</p>
+
+<p>
+  <strong>Collaborator:</strong>
+  <%= @change_salary.collaborator %>
+</p>
+
+<p>
+  <strong>Cost center:</strong>
+  <%= @change_salary.cost_center %>
+</p>
+
+<p>
+  <strong>Salary current:</strong>
+  <%= @change_salary.salary_current %>
+</p>
+
+<p>
+  <strong>New salary:</strong>
+  <%= @change_salary.new_salary %>
+</p>
+
+<p>
+  <strong>Date change:</strong>
+  <%= @change_salary.date_change %>
+</p>
+
+<p>
+  <strong>Reason change:</strong>
+  <%= @change_salary.reason_change %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @change_salary.user %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @change_salary.status %>
+</p>
+
+<%= link_to 'Edit', edit_change_salary_path(@change_salary) %> |
+<%= link_to 'Back', change_salaries_path %>

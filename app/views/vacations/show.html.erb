@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @vacation.company %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @vacation.branch %>
+</p>
+
+<p>
+  <strong>Cost center:</strong>
+  <%= @vacation.cost_center %>
+</p>
+
+<p>
+  <strong>Collaborator:</strong>
+  <%= @vacation.collaborator %>
+</p>
+
+<p>
+  <strong>First date:</strong>
+  <%= @vacation.first_date %>
+</p>
+
+<p>
+  <strong>Second date:</strong>
+  <%= @vacation.second_date %>
+</p>
+
+<p>
+  <strong>Third date:</strong>
+  <%= @vacation.third_date %>
+</p>
+
+<p>
+  <strong>First quantity:</strong>
+  <%= @vacation.first_quantity %>
+</p>
+
+<p>
+  <strong>Second quantity:</strong>
+  <%= @vacation.second_quantity %>
+</p>
+
+<p>
+  <strong>Third quantity:</strong>
+  <%= @vacation.third_quantity %>
+</p>
+
+<p>
+  <strong>Allowance:</strong>
+  <%= @vacation.allowance %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @vacation.note %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @vacation.status %>
+</p>
+
+<%= link_to 'Edit', edit_vacation_path(@vacation) %> |
+<%= link_to 'Back', vacations_path %>

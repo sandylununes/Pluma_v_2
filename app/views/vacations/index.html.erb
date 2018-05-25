@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vacations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Branch</th>
+      <th>Cost center</th>
+      <th>Collaborator</th>
+      <th>First date</th>
+      <th>Second date</th>
+      <th>Third date</th>
+      <th>First quantity</th>
+      <th>Second quantity</th>
+      <th>Third quantity</th>
+      <th>Allowance</th>
+      <th>Note</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vacations.each do |vacation| %>
+      <tr>
+        <td><%= vacation.company %></td>
+        <td><%= vacation.branch %></td>
+        <td><%= vacation.cost_center %></td>
+        <td><%= vacation.collaborator %></td>
+        <td><%= vacation.first_date %></td>
+        <td><%= vacation.second_date %></td>
+        <td><%= vacation.third_date %></td>
+        <td><%= vacation.first_quantity %></td>
+        <td><%= vacation.second_quantity %></td>
+        <td><%= vacation.third_quantity %></td>
+        <td><%= vacation.allowance %></td>
+        <td><%= vacation.note %></td>
+        <td><%= vacation.status %></td>
+        <td><%= link_to 'Show', vacation %></td>
+        <td><%= link_to 'Edit', edit_vacation_path(vacation) %></td>
+        <td><%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vacation', new_vacation_path %>

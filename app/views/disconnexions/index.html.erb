@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Disconnexions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Collaborator</th>
+      <th>Cost center</th>
+      <th>Charge</th>
+      <th>Date admission</th>
+      <th>Observation</th>
+      <th>Company initiative</th>
+      <th>Employee initiative</th>
+      <th>Agreed disconexion</th>
+      <th>Antecipation contract</th>
+      <th>Contract term</th>
+      <th>Date notice</th>
+      <th>Readmission</th>
+      <th>Reason not readmission</th>
+      <th>User</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @disconnexions.each do |disconnexion| %>
+      <tr>
+        <td><%= disconnexion.collaborator %></td>
+        <td><%= disconnexion.cost_center %></td>
+        <td><%= disconnexion.charge %></td>
+        <td><%= disconnexion.date_admission %></td>
+        <td><%= disconnexion.observation %></td>
+        <td><%= disconnexion.company_initiative %></td>
+        <td><%= disconnexion.employee_initiative %></td>
+        <td><%= disconnexion.agreed_disconexion %></td>
+        <td><%= disconnexion.antecipation_contract %></td>
+        <td><%= disconnexion.contract_term %></td>
+        <td><%= disconnexion.date_notice %></td>
+        <td><%= disconnexion.readmission %></td>
+        <td><%= disconnexion.reason_not_readmission %></td>
+        <td><%= disconnexion.user %></td>
+        <td><%= disconnexion.status %></td>
+        <td><%= link_to 'Show', disconnexion %></td>
+        <td><%= link_to 'Edit', edit_disconnexion_path(disconnexion) %></td>
+        <td><%= link_to 'Destroy', disconnexion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Disconnexion', new_disconnexion_path %>

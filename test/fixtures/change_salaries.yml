@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: one
+  collaborator: MyString
+  cost_center: one
+  salary_current: 9.99
+  new_salary: 9.99
+  date_change: 2018-05-24
+  reason_change: MyText
+  user: one
+  status: 1
+
+two:
+  company: two
+  collaborator: MyString
+  cost_center: two
+  salary_current: 9.99
+  new_salary: 9.99
+  date_change: 2018-05-24
+  reason_change: MyText
+  user: two
+  status: 1

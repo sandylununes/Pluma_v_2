@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  branch: one
+  collaborator: MyString
+  cost_center: one
+  current_position: MyString
+  new_position: MyString
+  date_change: 2018-05-24
+  status: 1
+  user: one
+
+two:
+  branch: two
+  collaborator: MyString
+  cost_center: two
+  current_position: MyString
+  new_position: MyString
+  date_change: 2018-05-24
+  status: 1
+  user: two

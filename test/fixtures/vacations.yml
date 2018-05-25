@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: one
+  branch: one
+  cost_center: one
+  collaborator: MyString
+  first_date: 2018-05-24
+  second_date: 2018-05-24
+  third_date: 2018-05-24
+  first_quantity: 1
+  second_quantity: 1
+  third_quantity: 1
+  allowance: 1
+  note: MyText
+  status: 1
+
+two:
+  company: two
+  branch: two
+  cost_center: two
+  collaborator: MyString
+  first_date: 2018-05-24
+  second_date: 2018-05-24
+  third_date: 2018-05-24
+  first_quantity: 1
+  second_quantity: 1
+  third_quantity: 1
+  allowance: 1
+  note: MyText
+  status: 1

@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collaborator: MyString
+  cost_center: one
+  charge: MyString
+  date_admission: 2018-05-24
+  observation: MyText
+  company_initiative: 1
+  employee_initiative: 1
+  agreed_disconexion: 1
+  antecipation_contract: 1
+  contract_term: 1
+  date_notice: 2018-05-24
+  readmission: 1
+  reason_not_readmission: MyText
+  user: one
+  status: 1
+
+two:
+  collaborator: MyString
+  cost_center: two
+  charge: MyString
+  date_admission: 2018-05-24
+  observation: MyText
+  company_initiative: 1
+  employee_initiative: 1
+  agreed_disconexion: 1
+  antecipation_contract: 1
+  contract_term: 1
+  date_notice: 2018-05-24
+  readmission: 1
+  reason_not_readmission: MyText
+  user: two
+  status: 1

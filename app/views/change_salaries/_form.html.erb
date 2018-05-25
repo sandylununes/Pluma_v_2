@@ -1,0 +1,62 @@
+<%= form_with(model: change_salary, local: true) do |form| %>
+  <% if change_salary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(change_salary.errors.count, "error") %> prohibited this change_salary from being saved:</h2>
+
+      <ul>
+      <% change_salary.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collaborator %>
+    <%= form.text_field :collaborator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_center_id %>
+    <%= form.text_field :cost_center_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salary_current %>
+    <%= form.text_field :salary_current %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_salary %>
+    <%= form.text_field :new_salary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_change %>
+    <%= form.date_select :date_change %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason_change %>
+    <%= form.text_area :reason_change %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @change_function.branch %>
+</p>
+
+<p>
+  <strong>Collaborator:</strong>
+  <%= @change_function.collaborator %>
+</p>
+
+<p>
+  <strong>Cost center:</strong>
+  <%= @change_function.cost_center %>
+</p>
+
+<p>
+  <strong>Current position:</strong>
+  <%= @change_function.current_position %>
+</p>
+
+<p>
+  <strong>New position:</strong>
+  <%= @change_function.new_position %>
+</p>
+
+<p>
+  <strong>Date change:</strong>
+  <%= @change_function.date_change %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @change_function.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @change_function.user %>
+</p>
+
+<%= link_to 'Edit', edit_change_function_path(@change_function) %> |
+<%= link_to 'Back', change_functions_path %>

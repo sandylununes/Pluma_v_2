@@ -1,0 +1,92 @@
+<%= form_with(model: disconnexion, local: true) do |form| %>
+  <% if disconnexion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(disconnexion.errors.count, "error") %> prohibited this disconnexion from being saved:</h2>
+
+      <ul>
+      <% disconnexion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :collaborator %>
+    <%= form.text_field :collaborator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_center_id %>
+    <%= form.text_field :cost_center_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :charge %>
+    <%= form.text_field :charge %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_admission %>
+    <%= form.date_select :date_admission %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observation %>
+    <%= form.text_area :observation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_initiative %>
+    <%= form.number_field :company_initiative %>
+  </div>
+
+  <div class="field">
+    <%= form.label :employee_initiative %>
+    <%= form.number_field :employee_initiative %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agreed_disconexion %>
+    <%= form.number_field :agreed_disconexion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :antecipation_contract %>
+    <%= form.number_field :antecipation_contract %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contract_term %>
+    <%= form.number_field :contract_term %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_notice %>
+    <%= form.date_select :date_notice %>
+  </div>
+
+  <div class="field">
+    <%= form.label :readmission %>
+    <%= form.number_field :readmission %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason_not_readmission %>
+    <%= form.text_area :reason_not_readmission %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

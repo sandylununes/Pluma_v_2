@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  new_cost_center: MyString
+  old_cost_center: MyString
+  cost_center: one
+  status: 1
+  who_ask: 1
+  user: one
+  collaborator: MyString
+  new_branch: MyString
+  old_branch: MyString
+  branch: one
+  new_company: MyString
+  old_company: MyString
+  company: one
+  tranference_date: 2018-05-24
+  old_city: MyString
+  new_city: MyString
+
+two:
+  new_cost_center: MyString
+  old_cost_center: MyString
+  cost_center: two
+  status: 1
+  who_ask: 1
+  user: two
+  collaborator: MyString
+  new_branch: MyString
+  old_branch: MyString
+  branch: two
+  new_company: MyString
+  old_company: MyString
+  company: two
+  tranference_date: 2018-05-24
+  old_city: MyString
+  new_city: MyString

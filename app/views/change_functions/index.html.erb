@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Change Functions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Branch</th>
+      <th>Collaborator</th>
+      <th>Cost center</th>
+      <th>Current position</th>
+      <th>New position</th>
+      <th>Date change</th>
+      <th>Status</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @change_functions.each do |change_function| %>
+      <tr>
+        <td><%= change_function.branch %></td>
+        <td><%= change_function.collaborator %></td>
+        <td><%= change_function.cost_center %></td>
+        <td><%= change_function.current_position %></td>
+        <td><%= change_function.new_position %></td>
+        <td><%= change_function.date_change %></td>
+        <td><%= change_function.status %></td>
+        <td><%= change_function.user %></td>
+        <td><%= link_to 'Show', change_function %></td>
+        <td><%= link_to 'Edit', edit_change_function_path(change_function) %></td>
+        <td><%= link_to 'Destroy', change_function, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Change Function', new_change_function_path %>

@@ -1,0 +1,82 @@
+<%= form_with(model: vacation, local: true) do |form| %>
+  <% if vacation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vacation.errors.count, "error") %> prohibited this vacation from being saved:</h2>
+
+      <ul>
+      <% vacation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :branch_id %>
+    <%= form.text_field :branch_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_center_id %>
+    <%= form.text_field :cost_center_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collaborator %>
+    <%= form.text_field :collaborator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_date %>
+    <%= form.date_select :first_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_date %>
+    <%= form.date_select :second_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :third_date %>
+    <%= form.date_select :third_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_quantity %>
+    <%= form.number_field :first_quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_quantity %>
+    <%= form.number_field :second_quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :third_quantity %>
+    <%= form.number_field :third_quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allowance %>
+    <%= form.number_field :allowance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_area :note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
